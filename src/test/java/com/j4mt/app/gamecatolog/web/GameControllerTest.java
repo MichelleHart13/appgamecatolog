@@ -53,7 +53,7 @@ public class GameControllerTest {
                 .accept(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isNoContent());
 
-        this.mockMvc.perform(get("/game/1")
+        this.mockMvc.perform(get("/game/4")
                 .accept(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().is(404));
     }
